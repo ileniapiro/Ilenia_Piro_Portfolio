@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  background-image: url('../images/medium.jpg');
+  background-image: url('../images/art.jpg');
   background-repeat: no-repeat;
   background-size: auto;
   display: grid;
@@ -24,7 +24,7 @@ body {
 
 header {
   grid-area: header;
-  height: 600px;
+  height: 530px;
   margin-bottom: 30px;
 }
 
@@ -42,11 +42,11 @@ header p {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 54px;
+  font-size: 45px;
   color: red;
   font-weight: 800;
-  margin-top: 0px;
-  margin-left: 0;
+  margin-top: 5px;
+  margin-left: 5px;
   margin-bottom: 0;
   background-image: linear-gradient(to left, black, red);
   -webkit-background-clip: text;
@@ -55,14 +55,14 @@ h1 {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   background-image: linear-gradient(red, orange);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  margin-left: -10px;
+  margin-left: -3px;
 }
 
 nav {
@@ -84,10 +84,6 @@ nav {
   padding-left: 4px;
   background-color: black;
   border-radius: 10%;
-}
-
-ul li {
-  list-style: none;
 }
 
 main {
@@ -123,10 +119,15 @@ main {
   padding: 5% 5%;
   margin-bottom: 15px;
 }
+.card-body p{
+  font-weight: bold;
+}
 
 h4 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .card1 {
@@ -157,6 +158,14 @@ footer {
   grid-area: footer;
 }
 
+ul li {
+  display: flex;
+}
+
+li a {
+
+
+}
 
 @media screen and (min-width: 768px) {
 
