@@ -62,7 +62,7 @@ h2 {
   font-weight: bold;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  margin-left: -3px;
+  margin-left: 120px;
 }
 
 nav {
@@ -109,17 +109,22 @@ main {
 
 #card {
   margin: auto;
+  margin-bottom: 10px;
   display: inline-block;
-  flex-direction: row;
-  justify-content: center;
   width: 80%;
   background-color: transparent;
   border: 2px solid black;
   border-radius: 10px;
   padding: 5% 5%;
-  margin-bottom: 15px;
 }
-.card-body p{
+
+.card-body h5 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.card-body p {
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -158,23 +163,70 @@ footer {
   grid-area: footer;
 }
 
-ul li {
+.icons {
   display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-li a {
+.linkedin {
+  margin: 5px;
+}
 
+.github {
+  margin: 5px;
+}
 
+.instagram {
+  margin: 5px;
+}
+
+.facebook {
+  margin: 5px;
+}
+
+.twitter {
+  margin: 5px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  line-height: 0;
 }
 
 @media screen and (min-width: 768px) {
+  header p {
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: -230px;
+  }
 
+  h1 {
+    font-size: 100px;
+    margin-top: 70px;
+    margin-left: 50px;
+  }
 
+  h2 {
+    font-size: 60px;
+  }
 
-  .container {
-    background-image: url('../images/rsz_white.jpg');
-    background-repeat: no-repeat;
-    background-size: auto;
+  main {
+    margin-top: 120px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+  }
 
+  h4 {
+    font-size: 1.5em;
   }
 }
