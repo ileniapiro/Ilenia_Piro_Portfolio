@@ -1,0 +1,30 @@
+.modal {
+  background: white;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.fotoIle {
+  width: 200px;
+  border: 1px solid black;
+}
+
+.lastP {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modalh1 {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+h6 {
+  display: flex;
+  justify-content: center;
+margin: auto;
+font-size: 25px;
+font-family: 'Great Vibes', sans-serif;
+}

@@ -34,17 +34,13 @@ header p {
   margin: auto;
   margin-top: 10px;
   justify-content: center;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  background-image: linear-gradient(to left, purple, blue, green, orange, red);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
+  border-bottom: 1px solid black;
 }
-.logo {
-  height: 300px;
-  position: absolute;
-  top: 110px;
-  left: 50px;
-}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 45px;
@@ -79,7 +75,7 @@ nav {
 
 .navbar a {
   font-size: 1.4em;
-  color: white;
+  color: black;
   font-family: 'Great Vibes', sans-serif;
   text-decoration: none;
   text-align: center;
@@ -101,6 +97,12 @@ background-color: #ffc3cd
 }
 .nav-item4 {
 background-color: #ff929f
+}
+
+#shape {
+  position: absolute;
+  top: 130px;
+  left: 70px;
 }
 
 main {
@@ -138,7 +140,11 @@ main {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  border: 2px solid black;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-image-source: linear-gradient( black,transparent);
+  border-image-slice: 1;
 }
 
 #card-face-front,
@@ -167,7 +173,7 @@ color: black;
 
 .cardimg {
   margin-top: 15px;
-  width: 230px;
+  width: 250px;
 }
 
  h5 {
