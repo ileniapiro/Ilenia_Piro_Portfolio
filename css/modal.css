@@ -1,5 +1,7 @@
 .modal {
   background: white;
+  border: 1px solid black;
+  margin: 15px;
 }
 
 h6 {
@@ -9,22 +11,32 @@ h6 {
 .fotoIle {
   width: 200px;
   border: 1px solid black;
+  display: block;
+  margin: auto auto;
+
+}
+.firstP {
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .lastP {
   margin: 10px;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .modalh1 {
   font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 h6 {
   display: flex;
   justify-content: center;
-margin: auto;
-font-size: 25px;
-font-family: 'Great Vibes', sans-serif;
+  margin: auto;
+  font-size: 25px;
+  font-family: 'Great Vibes', sans-serif;
 }
