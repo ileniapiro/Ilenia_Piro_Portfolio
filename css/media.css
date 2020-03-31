@@ -1,0 +1,461 @@
+@media screen and (min-width: 375px) {
+  h1 {
+    font-size: 53px;
+  }
+
+  header p {
+    font-size: 30px;
+    top: 200px;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  header p {
+    font-size: 35px;
+    top: 200px;
+    left: 100px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  header {
+    height: 470px;
+  }
+
+  .cardscene {
+    height: 300px;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .cardscene {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  header p {
+    font-size: 45px;
+    top: 200px;
+    left: 150px;
+  }
+
+  .cardscene {
+    height: 400px;
+  }
+
+  h5 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 700px;
+  }
+
+  header p {
+    font-size: 55px;
+    top: 700px;
+    left: 90px;
+    margin-left: 150px;
+    margin-top: -230px;
+  }
+
+  h1 {
+    font-size: 90px;
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+
+  h2 {
+    font-size: 70px;
+    margin-left: 60px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .tools {
+    margin-top: 30px;
+  }
+
+  .js,
+  .html,
+  .css {
+    height: 35px;
+    margin-right: 8px;
+  }
+
+  main {
+    margin-top: 20px;
+    grid-template-columns: 47% 47%;
+    grid-template-areas:
+      "maintitle maintitle"
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "footer footer"
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  .overlayCard .modal {
+    display: inherit;
+    border-radius: 10px;
+    line-height: 1;
+    margin: auto 0;
+    text-align: center;
+    min-width: 50%;
+    position: absolute;
+    left: 13%;
+    margin-left: 10%;
+    top: 13%;
+  }
+
+  .cardscene {
+    height: 300px;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  .linkedin,
+  .github,
+  .instagram,
+  .facebook,
+  .twitter {
+    height: 35px;
+    width: 35px;
+    margin: 7px;
+  }
+  .copyright {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    background-image: url('../images/iStock.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    height: 750px;
+  }
+
+  h1 {
+    font-size: 130px;
+    margin-top: 80px;
+    margin-left: 80px;
+  }
+
+  h2 {
+    font-size: 80px;
+    margin-left: 80px;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 80px;
+    top: 800px;
+    left: 150px;
+    margin-left: 150px;
+    margin-top: -230px;
+    border: 2px solid black;
+  }
+
+  .navbar a {
+    font-size: 1.8em;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+
+  .navbar a {
+    border: 1px solid black;
+    background-image: linear-gradient(#ffe266, #fe8654);
+  }
+
+  .nav-item1:hover {
+    background-color: #ccbaec;
+    transform: scale(1.3);
+  }
+
+  .nav-item2:hover {
+    background-color: #dab8d9;
+    transform: scale(1.3);
+  }
+
+  .nav-item3:hover {
+    background-color: #ffc3cd;
+    transform: scale(1.3);
+  }
+
+  .nav-item4:hover {
+    background-color: #ff929f;
+    transform: scale(1.3);
+  }
+
+  .maintitle {
+    width: 100vw;
+  }
+
+  main {
+    margin-top: 70px;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-areas:
+      "maintitle maintitle maintitle"
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "footer footer footer"
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  .overlayCard .modal {
+    display: inherit;
+    border-radius: 10px;
+    line-height: 1;
+    margin: auto 0;
+    text-align: center;
+    min-width: 25%;
+    position: absolute;
+    left: 27.5%;
+    margin-left: 10%;
+    top: 15%;
+  }
+
+  .cardscene {
+    height: 260px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    font-size: 1.3em;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .icons a .linkedin {
+    width: 3.2em;
+    height: auto;
+    padding: .25em;
+    border-radius: 50%;
+    fill: white;
+    background: #007bb6;
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+  }
+
+  .icons a:hover .linkedin {
+    fill: #007bb6;
+    background: white;
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid #007bb6;
+  }
+
+  .icons a .github {
+    width: 3.2em;
+    height: auto;
+    padding: .25em;
+    border-radius: 50%;
+    fill: white;
+    background: black;
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+  }
+
+  .icons a:hover .github {
+    fill: #0e1a25;
+    background: white;
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid black;
+  }
+
+  .icons a .instagram {
+    width: 3.2em;
+    height: auto;
+    padding: .25em;
+    border-radius: 50%;
+    fill: white;
+    background-image: linear-gradient(#7b19bc, #e5206f, #f03d38, #f27e29, #f9bd4b);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+  }
+
+  .icons a:hover .instagram {
+    fill: url(#my-cool-gradient);
+    background: white;
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid #f03d38;
+  }
+
+  .icons a .facebook {
+    width: 3.2em;
+    height: auto;
+    padding: .25em;
+    border-radius: 50%;
+    fill: #4361a1;
+    background: white;
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid #4361a1;
+  }
+
+  .icons a:hover .facebook {
+    fill: white;
+    background: #4361a1;
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid white;
+  }
+
+  .icons a .twitter {
+    width: 3.2em;
+    height: auto;
+    padding: .25em;
+    border-radius: 50%;
+    fill: #1A91DA;
+    background: white;
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid #1A91DA;
+  }
+
+  .icons a:hover .twitter {
+    fill: white;
+    background: #1A91DA;
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+    border: 2px solid white;
+  }
+
+  .copyright {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (min-width: 1225px) {
+  h1 {
+    margin-top: 80px;
+    margin-left: 0px;
+    padding-left: .9em;
+  }
+
+  .graphic {
+    font-weight: 900;
+    font-size: 7em;
+  }
+
+  .graphic .letter {
+    display: inline-block;
+    line-height: 1.3em;
+  }
+
+  h2 {
+    font-size: 85px;
+    margin-left: 120px;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 80px;
+    top: 750px;
+    left: 300px;
+    margin-left: 150px;
+    margin-top: -230px;
+    border: 2px solid black;
+  }
+
+  main {
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .cardscene {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  header {
+    height: 800px;
+  }
+
+  .graphic {
+    font-weight: 900;
+    font-size: 10em;
+  }
+
+  h2 {
+    font-size: 90px;
+    margin-left: 120px;
+  }
+
+  h5 {
+    margin-right: 30px;
+    margin-left:30px;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+  }
+
+  header p {
+    font-size: 90px;
+    top: 650px;
+    left: 900px;
+    margin-left: 150px;
+    margin-top: -230px;
+    border: 2px solid black;
+  }
+
+  .cardscene {
+    height: 390px;
+  }
+
+.icons li a:hover .icon {
+  transform: rotateY(360deg);
+}
+
+.copyright {
+  font-size: 17px;
+}
+
+}

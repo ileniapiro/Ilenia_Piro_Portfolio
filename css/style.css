@@ -41,7 +41,6 @@ header p {
   color: transparent;
   font-weight: bold;
   border: 1px solid black;
-
 }
 
 h1 {
@@ -50,7 +49,7 @@ h1 {
   font-size: 46px;
   font-weight: 800;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 10px;
   margin-bottom: 0;
   background-image: linear-gradient(to left, black, #c4e5fc);
   -webkit-background-clip: text;
@@ -66,19 +65,21 @@ h2 {
   font-weight: bold;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 nav {
   grid-area: nav;
   display: flex;
+  justify-content: center;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
 }
 
 .navbar a {
   font-size: 1.4em;
-  color: white;
+  color: black;
   font-family: 'Great Vibes', sans-serif;
   text-decoration: none;
   text-align: center;
@@ -88,8 +89,7 @@ nav {
   padding-left: 4px;
   border-bottom: 2px solid black;
   border: 1px solid black;
-  background-color: black;
-  border-radius: 5px;
+  background-image: linear-gradient(#c4e5fc, #6c7dc4);
 }
 
 .nav-item1,
@@ -97,26 +97,6 @@ nav {
 .nav-item3,
 .nav-item4 {
   display: inline-block;
-}
-
-.nav-item1:hover {
-  background-color: #ccbaec;
-  transform: scale(1.3);
-}
-
-.nav-item2:hover {
-  background-color: #dab8d9;
-  transform: scale(1.3);
-}
-
-.nav-item3:hover {
-  background-color: #ffc3cd;
-  transform: scale(1.3);
-}
-
-.nav-item4:hover {
-  background-color: #ff929f;
-  transform: scale(1.3);
 }
 
 main {
@@ -149,34 +129,105 @@ h3 {
 .tools {
   list-style: none;
   display: flex;
+  margin-left: 5px;
   margin-right: 5px;
-  padding-left: 10px;
+  padding-left: 0;
+  justify-content: center;
 }
 
 .js,
 .html,
 .css {
+  height: 30px;
   margin-right: 5px;
 }
 
-svg {
-  cursor: pointer;
-}
-
 .cardscene {
+  -webkit-perspective: 800;
+  -ms-perspective: 800;
+  -moz-perspective: 800;
+  -o-perspective: 800;
   width: 80%;
   height: 250px;
-  perspective: 1000px;
+  position: relative;
   margin: auto;
   margin-bottom: 15px;
 }
 
-.card-body {
+.cardscene .card-body.flipped {
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body {
   width: 100%;
   height: 100%;
-  position: relative;
-  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
   transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.cardscene .card-body .card1,
+.cardscene .card-body .card2,
+.cardscene .card-body .card3,
+.cardscene .card-body .card4,
+.cardscene .card-body .card5,
+.cardscene .card-body .card6 {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  backface-visibility: hidden;
+  /* W3C */
+  -webkit-backface-visibility: hidden;
+  /* Safari & Chrome */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+  -o-backface-visibility: hidden;
+  /* Opera */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  overflow: auto;
+}
+
+.cardscene .card-body #card-face-back {
+  background: white;
+  color: black;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body #card-face-front {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+  color: black;
   border-top: 5px solid;
   border-left: 2px solid;
   border-right: 2px solid;
@@ -184,28 +235,21 @@ svg {
   border-image-slice: 1;
 }
 
-#card-face-front,
-#card-face-back {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  backface-visibility: hidden;
-}
-
-#card-face-front {
-  color: black;
-}
-
-#card-face-back {
-  background: black;
+.cardscene .card-body #card-face-back {
+  font-family: 'Advent Pro', sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
   color: white;
-  transform: rotateY(180deg);
-  padding: 0 5px 5px;
-  padding-left: 8px;
+  padding-top: 20px;
+  font-size: .8em;
 }
 
-.card-body:hover {
-  transform: rotateY(180deg);
+h4 {
+  height: 1.2em;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 15px;
 }
 
 .cardimg {
@@ -215,7 +259,7 @@ svg {
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-top: 15px;
 }
@@ -226,14 +270,6 @@ h5 a:link {
 
 h5 a:visited {
   color: #ff929f;
-}
-
-h4 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.4em;
-  margin-top: 15px;
 }
 
 .card1 {
@@ -273,23 +309,13 @@ footer {
   padding-bottom: 10px;
 }
 
-.linkedin {
-  margin: 5px;
-}
-
-.github {
-  margin: 5px;
-}
-
-.instagram {
-  margin: 5px;
-}
-
-.facebook {
-  margin: 5px;
-}
-
+.linkedin,
+.github,
+.instagram,
+.facebook,
 .twitter {
+  height: 30px;
+  width: 30px;
   margin: 5px;
 }
 
@@ -299,206 +325,4 @@ footer {
   align-items: center;
   font-size: 13px;
   line-height: 0;
-}
-
-@media screen and (min-width: 375px) {
-  h1 {
-    font-size: 53px;
-  }
-
-  header p {
-    font-size: 30px;
-    top: 200px;
-    left: 100px;
-  }
-}
-
-@media screen and (min-width: 420px) {
-  h1 {
-    font-size: 60px;
-  }
-
-  header p {
-    font-size: 35px;
-    top: 200px;
-    left: 100px;
-  }
-
-  h2 {
-    font-size: 60px;
-  }
-
-  header {
-    height: 470px;
-  }
-
-  .cardscene {
-    height: 320px;
-  }
-}
-
-@media screen and (min-width: 590px) {
-  header p {
-    font-size: 45px;
-    top: 200px;
-    left: 150px;
-  }
-
-  .cardscene {
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-  header {
-    height: 700px;
-  }
-
-  header p {
-    font-size: 55px;
-    top: 700px;
-    left: 90px;
-    margin-left: 150px;
-    margin-top: -230px;
-  }
-
-  h1 {
-    font-size: 90px;
-    margin-top: 60px;
-    margin-left: 60px;
-  }
-
-  h2 {
-    font-size: 70px;
-    margin-left: 60px;
-  }
-
-  main {
-    margin-top: 20px;
-    grid-template-columns: 47% 47%;
-    grid-template-areas:
-      "maintitle maintitle"
-      "card1 card2"
-      "card3 card4"
-      "card5 card6"
-  }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
-  .overlayCard .modal {
-    display: inherit;
-    border-radius: 10px;
-    line-height: 1;
-    margin: auto 0;
-    text-align: center;
-    min-width: 50%;
-    position: absolute;
-    left: 13%;
-    margin-left: 10%;
-    top: 13%;
-  }
-
-  .cardscene {
-    height: 290px;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    background-image: url('../images/iStock.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  header {
-    height: 750px;
-  }
-
-  h1 {
-    font-size: 130px;
-    margin-top: 80px;
-    margin-left: 80px;
-  }
-
-  h2 {
-    font-size: 80px;
-    margin-left: 80px;
-  }
-
-  header p {
-    font-size: 80px;
-    top: 800px;
-    left: 150px;
-    margin-left: 150px;
-    margin-top: -230px;
-    border: 2px solid black;
-  }
-
-  .navbar a {
-    font-size: 1.8em;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-right: 7px;
-    padding-left: 7px;
-  }
-
-.maintitle {
-  width: 100vw;
-}
-  main {
-    margin-top: 120px;
-    grid-template-columns: 31% 31% 31%;
-    grid-template-areas:
-      "maintitle maintitle maintitle"
-      "card1 card2 card3"
-      "card4 card5 card6"
-  }
-
-  h4 {
-    font-size: 30px;
-  }
-
-  .overlayCard .modal {
-    display: inherit;
-    border-radius: 10px;
-    line-height: 1;
-    margin: auto 0;
-    text-align: center;
-    min-width: 25%;
-    position: absolute;
-    left: 27.5%;
-    margin-left: 10%;
-    top: 15%;
-  }
-
-  .card-text {
-    font-size: 19px;
-  }
-}
-
-@media screen and (min-width: 1205px) {
-
-  h1 {
-    font-size: 150px;
-    margin-top: 100px;
-    margin-left: 100px;
-  }
-
-  h2 {
-    font-size: 85px;
-    margin-left: 100px;
-  }
-
-  header p {
-    font-size: 100px;
-    top: 700px;
-    left: 750px;
-    margin-left: 150px;
-    margin-top: -230px;
-    border: 2px solid black;
-  }
 }
