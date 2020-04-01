@@ -48,11 +48,10 @@ h1 {
   font-size: 2.8em;
   font-weight: 800;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
   margin-bottom: 0;
-  background-image: linear-gradient(to left, black, #c4e5fc);
+  color: #9AB3E1;
   -webkit-background-clip: text;
-  color: transparent;
 }
 
 h2 {
@@ -289,6 +288,7 @@ h4 {
   font-weight: bold;
   font-size: 1.4em;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .cardimg {
