@@ -1,12 +1,12 @@
-# Coming-Soon of Hackmind.it
+# Ilenia Piro Portfolio
 
-This is the coming-soon page of the website www.hackmind.it
+This is an example of how to build a portfolio page.
 
 ## Responsive website
 
 As you can see from the image below the website is fully responsive.
 
-![Hackmind Coming-soon](https://github.com/ileniapiro/coming-soon_hackmind/raw/master/cs-hackmind-done.png)
+![Ilenia Piro Portfolio](https://github.com/ileniapiro/Ilenia_Piro_Portfolio/raw/master/Ilenia_Piro_Portfolio-done.png)
 
 ## Author
 
@@ -14,7 +14,7 @@ As you can see from the image below the website is fully responsive.
 
 ## Copyright
 
-* Copyright (C) Hackmind di Proietti Claudio - All Rights Reserved
+* Copyright (C) Ilenia Piro' Portfolio di Ilenia Piro' - All Rights Reserved
 * Unauthorized copying of this file, via any medium is strictly prohibited
 * Proprietary and confidential
-* Written by Ilenia Piro <ilenia.piro@hackmind.it>, March 2020
+* Written by Ilenia Piro <ilenia.piro@gmail.com>, April 2020
