@@ -88,6 +88,7 @@ nav {
   padding-left: 4px;
   border-bottom: 2px solid black;
   border: 1px solid black;
+  border-radius: 10%;
   background-image: linear-gradient(#c4e5fc, #6c7dc4);
   animation: bounce 2.5s infinite;
   -webkit-animation: bounce 2.5s infinite;
@@ -188,7 +189,7 @@ h3 {
   -moz-perspective: 800;
   -o-perspective: 800;
   width: 80%;
-  height: 250px;
+  height: 280px;
   position: relative;
   margin: auto;
   margin-bottom: 15px;
@@ -284,15 +285,15 @@ h3 {
 }
 
 h4 {
-  height: 1.2em;
+  height: 1.3em;
   font-weight: bold;
   font-size: 1.4em;
   margin-top: 15px;
 }
 
 .cardimg {
-  padding-top: 15px;
-  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 15px;
   width: 100%;
 }
 
