@@ -96,24 +96,20 @@ h6 {
     border-radius: 10px;
     line-height: 1;
     margin: auto;
-
     margin-top: 4.5em;
     max-width: 400px;
-
     top: 13%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-
   .modal {
-      display: inherit;
-      border-radius: 10px;
-      line-height: 1;
-      margin: auto;
-margin-top: 6em;
-      max-width: 480px;
-
-      top: 15%;
-    }
+    display: inherit;
+    border-radius: 10px;
+    line-height: 1;
+    margin: auto;
+    margin-top: 6em;
+    max-width: 480px;
+    top: 15%;
+  }
 }

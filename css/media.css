@@ -81,6 +81,7 @@
   h5 {
     font-size: 1.8em;
   }
+
   .copyright {
     font-size: 1em;
   }
@@ -116,7 +117,7 @@
 
   .tools {
     margin-top: 30px;
-      margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .js,
@@ -141,8 +142,6 @@
     font-size: 1.5em;
   }
 
-
-
   .cardscene {
     height: 320px;
   }
@@ -154,7 +153,6 @@
   .cardimg {
     padding-top: 35px;
   }
-
 
   .linkedin,
   .github,
@@ -331,14 +329,12 @@
     font-size: 1.5em;
   }
 
-
   .cardscene {
     height: 310px;
   }
 
-
   .tools {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   footer {
