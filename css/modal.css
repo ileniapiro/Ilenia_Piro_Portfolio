@@ -25,16 +25,11 @@
   background-image: url('../images/modal_istock.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 15px;
-  max-width: 480px;
+  margin: auto;
+  max-width: 300px;
   border-radius: 10px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
-}
-
-h6 {
-  font-size: .9em;
-  margin: auto;
 }
 
 .fotoIle {
@@ -48,7 +43,7 @@ h6 {
 
 .firstP {
   font-size: .9em;
-  margin:10px;
+  margin: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid black;
 }
@@ -69,6 +64,7 @@ h6 {
 }
 
 h6 {
+  font-size: .9em;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -78,16 +74,48 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
+  .firstP {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 1.1em;
+  }
 
-.firstP {
-  margin-right: 30px;
-  margin-left: 30px;
- font-size: 1.1em;
+  .modal {
+    max-width: 380px;
+  }
+
+  .lastP {
+    font-size: 1.1em;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .overlayCard .modal {
+    display: inherit;
+    border-radius: 10px;
+    line-height: 1;
+    margin: auto 0;
+    text-align: center;
+    max-width: 380px;
+    position: absolute;
+    left: 13%;
+    margin-left: 10%;
+    top: 13%;
+  }
 }
 
-.lastP {
-  font-size: 1.1em;
-  margin-right: 30px;
-  margin-left: 30px;
-}
+@media screen and (min-width: 1024px) {
+
+    .overlayCard .modal {
+      display: inherit;
+      border-radius: 10px;
+      line-height: 1;
+      margin: auto 0;
+      text-align: center;
+      max-width: 380px;
+      position: absolute;
+      left: 27.5%;
+      margin-left: 10%;
+      top: 15%;
+    }
 }
