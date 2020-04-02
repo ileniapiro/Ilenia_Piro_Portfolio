@@ -1,10 +1,10 @@
 function openOverlay() {
   document.getElementById('overlay').style.display = "block";
-};
+}
 
 function closeOverlay() {
   document.getElementById('overlay').style.display = "none";
-};
+}
 
 $(function() {
   $('#card-face-front').on('click', function() {
@@ -27,10 +27,10 @@ anime.timeline({
     easing: "easeOutExpo",
     duration: 950,
     delay: (el, i) => 70 * i
-    }).add({
-      targets: '.graphic',
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000,
+  }).add({
+    targets: '.graphic',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
   });

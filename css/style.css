@@ -155,13 +155,15 @@ main {
 
 .maintitle {
   grid-area: maintitle;
-  display: flex;
+  display: block;
   justify-content: center;
   margin-top: 0px;
   font-size: 1.8em;
 }
 
 h3 {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -169,6 +171,7 @@ h3 {
 .tools {
   list-style: none;
   display: flex;
+
   margin-left: 5px;
   margin-right: 5px;
   padding-left: 0;
@@ -248,7 +251,7 @@ h3 {
   overflow: auto;
 }
 
-.cardscene .card-body #card-face-back {
+.cardscene .card-body #card-face-back1b {
   background: white;
   color: black;
   transform: rotatey(-180deg);
@@ -262,7 +265,7 @@ h3 {
   /* Opera */
 }
 
-.cardscene .card-body #card-face-front {
+.cardscene .card-body #card-face-front1a {
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
   line-height: 20px;
@@ -273,7 +276,182 @@ h3 {
   border-left: 1px solid;
 }
 
-.cardscene .card-body #card-face-back {
+.cardscene .card-body #card-face-back1b {
+  font-family: 'Advent Pro', sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: .8em;
+}
+
+.cardscene .card-body #card-face-back2b {
+  background: white;
+  color: black;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body #card-face-front2a {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+  color: black;
+  border-top: 5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.cardscene .card-body #card-face-back2b {
+  font-family: 'Advent Pro', sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: .8em;
+}
+
+.cardscene .card-body #card-face-back3b {
+  background: white;
+  color: black;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body #card-face-front3a {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+  color: black;
+  border-top: 5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.cardscene .card-body #card-face-back3b {
+  font-family: 'Advent Pro', sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: .8em;
+}
+
+.cardscene .card-body #card-face-back4b {
+  background: white;
+  color: black;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body #card-face-front4a {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+  color: black;
+  border-top: 5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.cardscene .card-body #card-face-back4b {
+  font-family: 'Advent Pro', sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: .8em;
+}
+
+.cardscene .card-body #card-face-back5b {
+  background: white;
+  color: black;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body #card-face-front5a {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+  color: black;
+  border-top: 5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.cardscene .card-body #card-face-back5b {
+  font-family: 'Advent Pro', sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-size: .8em;
+}
+
+.cardscene .card-body #card-face-back6b {
+  background: white;
+  color: black;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg);
+  /* IE 9 */
+  -moz-transform: rotatey(-180deg);
+  /* Firefox */
+  -webkit-transform: rotatey(-180deg);
+  /* Safari and Chrome */
+  -o-transform: rotatey(-180deg);
+  /* Opera */
+}
+
+.cardscene .card-body #card-face-front6a {
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  line-height: 20px;
+  background-color: transparent;
+  color: black;
+  border-top: 5px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+.cardscene .card-body #card-face-back6b {
   font-family: 'Advent Pro', sans-serif;
   background-color: black;
   border: 1px solid black;

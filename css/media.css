@@ -116,6 +116,7 @@
 
   .tools {
     margin-top: 30px;
+      margin-bottom: 40px;
   }
 
   .js,
@@ -335,6 +336,11 @@
     height: 310px;
   }
 
+
+  .tools {
+      margin-bottom: 50px;
+  }
+
   footer {
     margin-top: 20px;
   }
@@ -513,6 +519,10 @@
   h2 {
     font-size: 5.6em;
     margin-left: 120px;
+  }
+
+  h3 {
+    font-size: 2em;
   }
 
   h5 {
